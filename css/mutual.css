@@ -1,0 +1,201 @@
+/**** Menu ****/
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  z-index: 1000; /** gør indexet højere end alt andet, så den er in front**/
+  height: 100px;
+}
+
+.logo img {
+  width: 195px;
+  height: 60px;
+  padding-left: 2.5rem;
+  object-fit: unset;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+  width: 100%;
+  padding-right: 50px;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 1.5rem;
+}
+
+/******/
+
+.menu li a {
+  display: flex;
+  align-items: center;
+  gap: 0px; /* Afstand mellem tekst og ikon */
+}
+
+/******/
+
+.menu a:hover {
+  color: blue;
+  text-decoration: underline;
+  scale: 1.2;
+  transition-timing-function: ease-in-out;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: black;
+    position: absolute;
+    border: solid;
+    border-color: blue;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 0.8rem;
+  }
+}
+
+/***** Footer *****/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  height: 300px;
+}
+
+.footer_container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.footer_sociale_medier {
+  display: flex;
+  flex-direction: row;
+  margin-right: 50px;
+}
+
+.footer_sociale_medier i,
+.footer_sociale_medier h3 {
+  margin-inline: 10px;
+  font-size: 2rem;
+}
+
+.footer_sociale_medier i:hover,
+.footer_sociale_medier h3:hover {
+  scale: 1.2;
+  color: blue;
+}
+
+.copyright_p {
+  font-size: 1.5rem;
+}
+
+.footer_nyhedsbrev {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+}
+
+.ny1 {
+  grid-column: span 2;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.kontakt_knap {
+  background-color: #2e54c6;
+  color: white;
+  border: none;
+  width: 75%;
+  height: 100%;
+  font-size: 1.2rem;
+}
+
+.kontakt_felt {
+  width: 100%;
+  height: 50px;
+  font-size: 1.5rem;
+  color: white;
+  border-color: white;
+  background-color: black;
+  border-style: solid;
+}

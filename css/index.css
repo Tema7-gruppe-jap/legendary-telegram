@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero {
+  aspect-ratio: 1200/500;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.hero_h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 25px;
+}
+
+.hero hr {
+  display: block;
+  margin: auto;
+  width: 90%;
+
+  border-width: 3px;
+  border-color: lightgray;
+  border-style: solid;
+}
+
+.categoryContainer {
+  display: block;
+  margin: auto;
+  width: 695px;
+  height: 200px;
+  background-color: white;
+  border-color: #2e54c6;
+  border-width: 4px;
+}
+
+.categoryContainer h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.categoryGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 75px;
+  margin-inline: 200px;
+  margin-bottom: 50px;
+}
+
+.main_h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding: 25px;
+}
+
+.kundeservice {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  background-color: lightgray;
+}
+
+.kundeservice p {
+  font-size: 1.5rem;
+  padding: 50px;
+}
