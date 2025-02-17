@@ -17,7 +17,7 @@ function showList(data) {
     .map(
       (product) =>
         ` <div class="card ${product.soldout && "udsolgt_f"}">
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="">
+                <img src="https://cdn.dummyjson.com/products/images/${product.id}.png" alt="">
                 <h3>${product.title}</h3>
                 <h4>${product.warrentyinformation}|${product.brand}</h4>
                 <p>${product.price},-</p>

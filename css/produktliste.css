@@ -68,3 +68,9 @@
 .udsolgt_fr {
   visibility: visible;
 }
+
+.card {
+  grid-row: span 5;
+  display: grid;
+  grid-template-rows: subgrid;
+}

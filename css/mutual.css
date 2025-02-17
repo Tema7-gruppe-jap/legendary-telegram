@@ -1,4 +1,4 @@
-/**** Menu ****/
+/*************** Menu *************/
 
 header {
   position: sticky;
@@ -7,7 +7,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #000000;
-  z-index: 1000; /** gør indexet højere end alt andet, så den er in front**/
+  z-index: 1000;
   height: 100px;
 }
 
@@ -50,21 +50,26 @@ nav {
   font-size: 1.5rem;
 }
 
-/******/
+/**********************/
 
 .menu li a {
   display: flex;
   align-items: center;
-  gap: 0px; /* Afstand mellem tekst og ikon */
+  gap: 0px;
 }
 
-/******/
+/****************/
 
 .menu a:hover {
-  color: blue;
+  color: #2e54c6;
   text-decoration: underline;
   scale: 1.2;
   transition-timing-function: ease-in-out;
+}
+
+.activ {
+  color: #2e54c6;
+  text-decoration: underline;
 }
 
 .burger {
@@ -113,7 +118,7 @@ nav {
     background-color: black;
     position: absolute;
     border: solid;
-    border-color: blue;
+    border-color: #2e54c6;
     top: 94px;
     left: 0;
     width: 100%;
@@ -129,7 +134,7 @@ nav {
   }
 }
 
-/***** Footer *****/
+/*********** Footer ***********/
 
 footer {
   display: flex;
@@ -161,7 +166,7 @@ footer {
 .footer_sociale_medier i:hover,
 .footer_sociale_medier h3:hover {
   scale: 1.2;
-  color: blue;
+  color: #2e54c6;
 }
 
 .copyright_p {
@@ -201,11 +206,7 @@ footer {
   border-style: solid;
 }
 
-.card {
-  grid-row: span 5;
-  display: grid;
-  grid-template-rows: subgrid;
-}
+/******** Tekst og overskrifter *******/
 
 h1 {
   font-family: "Barlow", serif;

@@ -29,6 +29,11 @@ a {
   color: black;
   text-align: center;
 }
+.greyline {
+  border-top: 7px solid lightgrey;
+  margin-inline: 3rem;
+  margin-top: 3rem;
+}
 
 .category_list_container a:hover {
   background-color: #2e54c6;
@@ -78,4 +83,8 @@ a {
 .kundeservice p {
   font-size: 1.5rem;
   padding: 50px;
+}
+
+.h2produkt {
+  text-align: center;
 }
