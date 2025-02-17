@@ -10,6 +10,13 @@ img {
   display: block;
 }
 
+a {
+  color: #2e54c6;
+  font-family: "Roboto Serif", serif;
+  margin-bottom: 1rem;
+  color: white;
+}
+
 .hero {
   aspect-ratio: 1200/500;
   background-size: cover;
