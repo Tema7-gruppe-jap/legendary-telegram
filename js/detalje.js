@@ -9,12 +9,12 @@ console.log("The productid is:", myproduct);
 let productId = myproduct;
 let productContainer = document.querySelector(".productContainer");
 
-fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
+fetch(`https://dummyjson.com/products/${productId}`)
   .then((response) => response.json())
   .then((data) => showProduct(data));
 
 function showProduct(data) {
-  productContainer.innerHTML = ` <img class="${data.soldout && "udsolgt_f"} marginleft produktfoto" src="https://kea-alt-del.dk/t7/images/webp/640/${productId}.webp" alt="">
+  productContainer.innerHTML = ` <img class="${data.stock === 0 && "udsolgt_f"} marginleft produktfoto" src="https://dummyjson.com/image/${productId}.webp" alt="">
 
 
             <div class="flex">

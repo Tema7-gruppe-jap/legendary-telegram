@@ -10,12 +10,6 @@ img {
   display: block;
 }
 
-a {
-  color: #2e54c6;
-  font-family: "Roboto Serif", serif;
-  margin-bottom: 1rem;
-}
-
 .category_list_container a {
   background-color: white;
   padding: 50px;
@@ -81,10 +75,10 @@ a {
 }
 
 .kundeservice p {
-  font-size: 1.5rem;
   padding: 50px;
+  padding-top: 100px;
 }
 
 .h2produkt {
-  text-align: center;
+  margin-top: 5rem;
 }
