@@ -200,3 +200,9 @@ footer {
   background-color: black;
   border-style: solid;
 }
+
+.card {
+  grid-row: span 5;
+  display: grid;
+  grid-template-rows: subgrid;
+}
