@@ -1,0 +1,76 @@
+.rabat {
+  position: relative;
+  top: -450px;
+  left: 0;
+  background-color: red;
+  color: black;
+  width: 30%;
+  text-align: center;
+  padding: 2px;
+  max-height: 25px;
+  visibility: hidden;
+}
+
+.rabat_fr {
+  visibility: visible;
+}
+
+.rabatprodukt {
+  position: relative;
+  top: -10px;
+  left: 0;
+  background-color: red;
+  color: black;
+  width: 30%;
+  text-align: center;
+  padding: 2px;
+  max-height: 25px;
+  visibility: hidden;
+}
+
+.rabatprodukt_fr {
+  visibility: visible;
+}
+
+.udsolgtprodukt {
+  position: relative;
+  top: -10px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.364);
+  color: white;
+  width: 100%;
+  text-align: left;
+  font-size: 50px;
+  padding: 2px;
+  visibility: hidden;
+}
+
+.udsolgtprodukt_fr {
+  visibility: visible;
+}
+
+.udsolgt_f {
+  filter: grayscale();
+}
+
+.udsolgt {
+  position: relative;
+  top: -420px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.364);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  visibility: hidden;
+}
+
+.udsolgt_fr {
+  visibility: visible;
+}
+
+.card {
+  grid-row: span 5;
+  display: grid;
+  grid-template-rows: subgrid;
+}

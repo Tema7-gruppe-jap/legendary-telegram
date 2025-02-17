@@ -1,4 +1,4 @@
-/**** Menu ****/
+/*************** Menu *************/
 
 header {
   position: sticky;
@@ -7,7 +7,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #000000;
-  z-index: 1000; /** gør indexet højere end alt andet, så den er in front**/
+  z-index: 1000;
   height: 100px;
 }
 
@@ -50,21 +50,26 @@ nav {
   font-size: 1.5rem;
 }
 
-/******/
+/**********************/
 
 .menu li a {
   display: flex;
   align-items: center;
-  gap: 0px; /* Afstand mellem tekst og ikon */
+  gap: 0px;
 }
 
-/******/
+/****************/
 
 .menu a:hover {
-  color: blue;
+  color: #2e54c6;
   text-decoration: underline;
   scale: 1.2;
   transition-timing-function: ease-in-out;
+}
+
+.activ {
+  color: #2e54c6;
+  text-decoration: underline;
 }
 
 .burger {
@@ -113,7 +118,7 @@ nav {
     background-color: black;
     position: absolute;
     border: solid;
-    border-color: blue;
+    border-color: #2e54c6;
     top: 94px;
     left: 0;
     width: 100%;
@@ -129,7 +134,7 @@ nav {
   }
 }
 
-/***** Footer *****/
+/*********** Footer ***********/
 
 footer {
   display: flex;
@@ -137,7 +142,7 @@ footer {
   justify-content: center;
   color: white;
   background-color: black;
-  height: 300px;
+  height: 200px;
 }
 
 .footer_container {
@@ -161,7 +166,7 @@ footer {
 .footer_sociale_medier i:hover,
 .footer_sociale_medier h3:hover {
   scale: 1.2;
-  color: blue;
+  color: #2e54c6;
 }
 
 .copyright_p {
@@ -188,6 +193,7 @@ footer {
   width: 75%;
   height: 100%;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .kontakt_felt {
@@ -198,4 +204,28 @@ footer {
   border-color: white;
   background-color: black;
   border-style: solid;
+}
+
+/******** Tekst og overskrifter *******/
+
+h1 {
+  font-family: "Barlow", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-family: "Space Grotesk", serif;
+  font-style: normal;
+  font-size: 24px;
+}
+
+h3 {
+  font-family: "Space Grotesk", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
 }
