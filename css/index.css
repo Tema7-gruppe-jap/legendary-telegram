@@ -23,8 +23,12 @@ img {
   color: black;
   text-align: center;
 }
-.greyline {
-  border-top: 7px solid lightgrey;
+
+.omosatag {
+  color: #2e54c6;
+}
+.yellowline {
+  border-top: 7px solid yellow;
   margin-inline: 3rem;
   margin-top: 3rem;
 }
