@@ -79,8 +79,7 @@ nav {
 
 .menu a:hover {
   color: #2e54c6;
-  text-decoration: underline;
-  scale: 1.2;
+  scale: 1.1;
   transition-timing-function: ease-in-out;
 }
 
@@ -108,7 +107,7 @@ nav {
   display: none;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 600px) {
   .menu {
     display: none;
   }
@@ -135,7 +134,7 @@ nav {
     background-color: black;
     position: absolute;
     border: solid;
-    border-color: #2e54c6;
+
     top: 94px;
     left: 0;
     width: 100%;
@@ -162,12 +161,6 @@ footer {
   height: 180px;
 }
 
-.footer_container {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-
 .footer_sociale_medier {
   display: flex;
   flex-direction: row;
@@ -190,11 +183,46 @@ footer {
   font-size: 1.5rem;
 }
 
-.footer_nyhedsbrev {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 5px;
+@media (min-width: 800px) {
+  .footer_nyhedsbrev {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+  }
+
+  .footer_container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer_nyhedsbrev {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer_nyhedsbrev,
+  .footer_container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .ny1 {
+    margin-top: 1rem;
+  }
+  .footer_nyhedsbrev {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+  }
+  .footer_sociale_medier {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 
 .ny1 {

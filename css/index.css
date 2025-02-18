@@ -7,9 +7,100 @@
 img {
   width: 100%;
   height: auto;
-  display: block;
+  align-self: stretch;
+  object-fit: contain;
 }
 
+/************** Responsiv ************/
+
+@media (max-width: 800px) {
+  .greyarea p {
+    padding: 50px;
+    padding-top: 50px;
+  }
+  .category_list_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    width: 95%;
+  }
+
+  .hero h2 {
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 5rem;
+    text-align: center;
+  }
+  .h1index {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .kundeservice {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .kundeservice p {
+    padding: 50px;
+    padding-top: 100px;
+  }
+
+  .category_list_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    width: 99%;
+  }
+
+  .hero h2 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 5rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  .category_list_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    width: 98%;
+  }
+
+  .kundeservice p {
+    padding: 100px;
+    padding-top: 100px;
+  }
+}
+
+.greyarea {
+  background-color: lightgray;
+}
+
+.yellowline {
+  border-top: 7px solid yellow;
+  margin-inline: 3rem;
+  margin-top: 3rem;
+}
+
+.hero {
+  aspect-ratio: 1200/500;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+/*********** knapperne til kategori  **************/
 .category_list_container a {
   background-color: white;
   padding: 50px;
@@ -27,60 +118,10 @@ img {
 .omosatag {
   color: #2e54c6;
 }
-.yellowline {
-  border-top: 7px solid yellow;
-  margin-inline: 3rem;
-  margin-top: 3rem;
-}
 
 .category_list_container a:hover {
   background-color: #2e54c6;
   color: white;
-}
-
-.category_list_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-top: 3rem;
-  margin-bottom: 6rem;
-}
-
-.hero {
-  aspect-ratio: 1200/500;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
-
-.hero hr {
-  display: block;
-  margin: auto;
-  width: 90%;
-
-  border-width: 3px;
-  border-color: lightgray;
-  border-style: solid;
-}
-
-.hero h2 {
-  font-weight: 600;
-  font-size: 40px;
-  margin-top: 5rem;
-  text-align: center;
-}
-
-.kundeservice {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  background-color: lightgray;
-}
-
-.kundeservice p {
-  padding: 50px;
-  padding-top: 100px;
 }
 
 .h2produkt {

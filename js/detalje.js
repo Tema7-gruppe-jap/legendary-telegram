@@ -44,7 +44,7 @@ function showProduct(data) {
 
                 <div>
 
-                    <p>${data.warrantyInformation} |  ${data.shippingInformation}</p>
+                    <p class="shipwarant">${data.warrantyInformation} |  ${data.shippingInformation}</p>
                     <p class="tilføjkurv">Tilføj kurv</p>
                 </div>
             </div>
