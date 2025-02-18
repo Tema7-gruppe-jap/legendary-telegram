@@ -1,0 +1,89 @@
+.productContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  background-color: lightgrey;
+}
+
+.rabatprodukt {
+  position: relative;
+  top: -10px;
+  left: 0;
+  background-color: yellow;
+  color: black;
+  width: 30%;
+  text-align: center;
+  padding: 2px;
+  max-height: 25px;
+  visibility: hidden;
+}
+
+.rabatprodukt_fr {
+  visibility: visible;
+}
+
+.udsolgtprodukt {
+  position: relative;
+  top: -10px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.364);
+  color: white;
+  width: 100%;
+  text-align: left;
+  font-size: 50px;
+  padding: 2px;
+  visibility: hidden;
+}
+
+.udsolgtprodukt_fr {
+  visibility: visible;
+}
+
+.udsolgt_f {
+  filter: grayscale();
+}
+
+.produktinfo {
+  margin: 0rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.specifik {
+  margin-top: 3rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.produktfoto {
+  padding-right: 2rem;
+  margin-left: 1rem;
+}
+.marginleft {
+  margin-left: 1rem;
+}
+.kurv {
+  background-color: gray;
+  margin-right: 1rem;
+  padding-left: 1rem;
+  border-radius: 10px;
+  margin-left: 1rem;
+  padding-right: 2rem;
+  margin-bottom: 1rem;
+  padding-block: 1rem;
+}
+.nummer {
+  margin-bottom: 2rem;
+}
+.tilføjkurv {
+  margin-top: 3rem;
+  color: black;
+  text-decoration: none;
+  font-family: "Roboto Serif", serif;
+  background-color: white;
+  border-radius: 50px;
+  padding: 2rem;
+}
