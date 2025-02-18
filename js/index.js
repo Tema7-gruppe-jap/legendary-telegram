@@ -1,4 +1,4 @@
-const categories = ["Smartphones", "Laptops", "Mobile Accessories", "Tablets"];
+const categories = ["smartphones", "laptops", "mobile-accessories", "tablets"];
 
 let categorybuttonContainer = document.querySelector(".category_list_container");
 fetch(`https://dummyjson.com/products/categories`)
@@ -7,8 +7,8 @@ fetch(`https://dummyjson.com/products/categories`)
 
 function showCategory(data) {
   const products = data
-    .filter((element) => categories.includes(element.name))
-    .map((element) => `<a href="produktliste.html?name=${element.name}">${element.name}</a>`)
+    .filter((element) => categories.includes(element.slug))
+    .map((element) => `<a href="produktliste.html?slug=${element.slug}">${element.name}</a>`)
     .join("");
 
   console.log(data);

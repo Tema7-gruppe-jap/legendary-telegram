@@ -5,7 +5,7 @@ const urlParams = new URLSearchParams(queryString);
 
 console.log("The params is:", urlParams);
 
-const mycategory = urlParams.get("name");
+const mycategory = urlParams.get("slug");
 
 console.log("The category is:", mycategory);
 
@@ -19,7 +19,7 @@ function showList(data) {
     .map(
       (product) =>
         ` <div class="card ${product.stock === 0 && "udsolgt_f"}">
-                <img src="https://dummyjson.com/image/${product.id}.webp" alt="">
+                <img src="${product.images[1]}" alt="">
                 <h3>${product.title}</h3>
                 <h4>${product.warrentyinformation}|${product.brand}</h4>
                 <p>${product.price},-</p>

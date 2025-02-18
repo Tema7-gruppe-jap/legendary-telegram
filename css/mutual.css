@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /*************** Menu *************/
 
 header {
@@ -232,6 +244,13 @@ h3 {
   font-weight: 300;
   font-style: normal;
   font-size: 18px;
+}
+
+h4 {
+  font-family: "Space Grotesk", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
 }
 
 p {
