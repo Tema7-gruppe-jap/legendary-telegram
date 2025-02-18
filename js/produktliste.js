@@ -10,6 +10,13 @@ const mycategory = urlParams.get("slug");
 console.log("The category is:", mycategory);
 
 const listContainer = document.querySelector(".produkt_liste_container");
+
+// fetch(`https://dummyjson.com/image/200x125`)
+//   .then((response) => response.blob()) // Convert response to blob
+//   .then((blob) => {
+//     console.log("Fetched image blob:", blob);
+//   });
+
 fetch(`https://dummyjson.com/products/category/${mycategory}`)
   .then((response) => response.json())
   .then((data) => showList(data));
