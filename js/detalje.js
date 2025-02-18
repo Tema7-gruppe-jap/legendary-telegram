@@ -16,11 +16,10 @@ fetch(`https://dummyjson.com/products/${productId}`)
 function showProduct(data) {
   productContainer.innerHTML = ` <img class="${data.stock === 0 && "udsolgt_f"} marginleft produktfoto" src="${data.images[1]}" alt="">
 
-
-            <div class="flex">
-
-               <div class="rabatprodukt ${data.discount && "rabatprodukt_fr"} ">
-                    <p>${data.discount}%</p>
+            <div>
+<h1>${data.brandname}</h1>
+               <div class="rabatprodukt ${data.discountPercentage && "rabatprodukt_fr"} ">
+                    <p>${data.discountPercentage}%</p>
                 </div>
 
                 <div class="udsolgtprodukt ${data.soldout && "udsolgtprodukt_fr"}">
