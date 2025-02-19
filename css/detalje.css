@@ -40,13 +40,8 @@
   margin-top: 3rem;
 }
 
-/* .flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-} */
-
 .titledetalje {
+  text-align: left;
   font-size: 36px;
 }
 
