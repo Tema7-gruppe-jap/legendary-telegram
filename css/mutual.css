@@ -240,6 +240,10 @@ footer {
   cursor: pointer;
 }
 
+.kontakt_knap:hover {
+  color: black;
+}
+
 .kontakt_felt {
   width: 100%;
   height: 50px;
