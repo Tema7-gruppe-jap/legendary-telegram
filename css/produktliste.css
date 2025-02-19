@@ -16,10 +16,11 @@ img {
   top: 10px;
   left: 10px;
   background-color: white;
-  color: red;
-  border-radius: 8px;
+  color: black;
+
   border-style: solid;
-  border-color: red;
+  border-color: yellow;
+  background-color: yellow;
   border-width: 2px;
   width: 30%;
   text-align: center;
@@ -59,12 +60,6 @@ img {
   visibility: visible;
 }
 
-/* .card {
-  display: grid;
-  grid-template-rows: subgrid;
-  grid-row: span 5;
-} */
-
 .card {
   border: 2px;
   border-style: solid;
@@ -89,10 +84,8 @@ img {
   margin: auto;
   width: 50%;
   height: 50px;
-  border-radius: 10px;
   border-style: solid;
   border-color: #2e54c6;
-
   background-color: white;
   font-size: 1.5rem;
   margin-top: 25px;
@@ -100,10 +93,15 @@ img {
 
 .buttonProduktliste a {
   text-decoration: none;
-  color: #2e54c6;
+  color: black;
 }
 
 .buttonProduktliste:hover {
+  background-color: #2e54c6;
+  color: white;
+}
+
+.buttonProduktliste a:hover {
   background-color: #2e54c6;
   color: white;
 }
@@ -119,4 +117,12 @@ img {
 
 .card h4 {
   font-size: 1.2rem;
+}
+
+.h1products {
+  margin-bottom: 2rem;
+}
+
+footer {
+  margin-top: 2rem;
 }
