@@ -28,9 +28,10 @@ function showList(data) {
         ` <div class="card ${product.stock === 0 && "udsolgt_f"}">
                 <img src="${product.images[1]}" alt="">
                 <h3>${product.title}</h3>
-                <h4>${product.warrentyinformation}|${product.brand}</h4>
+                <h4>${product.category}|${product.brand}</h4>
                 <p>${product.price},-</p>
-                <a href="detalje.html?id=${product.id}">Læs mere</a>
+                
+                <button class="buttonProduktliste"><a href="detalje.html?id=${product.id}">Se produkt</a></button>
 
 
  <div class="rabat ${product.discountPercentage && "rabat_fr"} ">

@@ -1,25 +1,29 @@
 img {
   width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 9/9;
   object-fit: contain;
 }
 
 .produkt_liste_container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: auto;
   gap: 10px;
 }
 
 .rabat {
-  position: relative;
-  top: -450px;
-  left: 0;
-  background-color: red;
-  color: black;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  color: red;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: red;
+  border-width: 2px;
   width: 30%;
   text-align: center;
-  padding: 2px;
-  max-height: 25px;
+  max-height: 55px;
   visibility: hidden;
 }
 
@@ -27,33 +31,19 @@ img {
   visibility: visible;
 }
 
-.rabatprodukt {
-  position: relative;
-  top: -10px;
-  left: 0;
-  background-color: red;
-  color: black;
-  width: 30%;
-  text-align: center;
-  padding: 2px;
-  max-height: 25px;
-  visibility: hidden;
-}
-
 .rabatprodukt_fr {
   visibility: visible;
 }
 
-.udsolgtprodukt {
+.udsolgt {
   position: relative;
-  top: -10px;
+  bottom: 50%;
   left: 0;
   background-color: rgba(0, 0, 0, 0.364);
   color: white;
   width: 100%;
-  text-align: left;
-  font-size: 50px;
-  padding: 2px;
+  text-align: center;
+  padding: 20px;
   visibility: hidden;
 }
 
@@ -65,24 +55,68 @@ img {
   filter: grayscale();
 }
 
-.udsolgt {
-  position: relative;
-  top: -420px;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.364);
-  color: white;
-  width: 100%;
-  text-align: center;
-  padding: 20px;
-  visibility: hidden;
-}
-
 .udsolgt_fr {
   visibility: visible;
 }
 
-.card {
+/* .card {
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 3;
+  grid-row: span 5;
+} */
+
+.card {
+  border: 2px;
+  border-style: solid;
+  border-color: lightgrey;
+  padding-top: 50px;
+}
+
+.card h3,
+.card h4,
+.card p {
+  margin-inline: 20px;
+}
+
+.card:hover {
+  scale: 1.005;
+  box-shadow: 0px 0px 15px 10px lightgray;
+  cursor: pointer;
+}
+
+.buttonProduktliste {
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #2e54c6;
+
+  background-color: white;
+  font-size: 1.5rem;
+  margin-top: 25px;
+}
+
+.buttonProduktliste a {
+  text-decoration: none;
+  color: #2e54c6;
+}
+
+.buttonProduktliste:hover {
+  background-color: #2e54c6;
+  color: white;
+}
+
+.buttonProduktliste a:hover {
+  color: white;
+}
+
+.card h3,
+.card p {
+  font-size: 1.5rem;
+}
+
+.card h4 {
+  font-size: 1.2rem;
 }
