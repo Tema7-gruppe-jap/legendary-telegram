@@ -13,6 +13,13 @@ img {
 
 /************** Responsiv ************/
 
+.hero h2 {
+  font-weight: 500;
+  font-size: 25px;
+  margin-top: 5rem;
+  text-align: center;
+}
+
 @media (max-width: 800px) {
   .greyarea p {
     padding: 50px;

@@ -20,7 +20,7 @@ function showProduct(data) {
 <h1 class="titledetalje">${data.title}</h1>
 
                <div class="rabatprodukt ${data.discountPercentage && "rabatprodukt_fr"} ">
-                    <p>${data.discountPercentage}%</p>
+                    <p>-${data.discountPercentage}%</p>
                 </div>
 
                 <div class="udsolgtprodukt ${data.stock === 0 && "udsolgtprodukt_fr"}">
