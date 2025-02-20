@@ -69,6 +69,10 @@ img {
     margin-top: 5rem;
     text-align: center;
   }
+
+  .h1index {
+    font-size: 50px;
+  }
 }
 
 /* @media (min-width: 800px) and (max-width: 1200px) {
@@ -102,7 +106,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 /*********** knapperne til kategori  **************/

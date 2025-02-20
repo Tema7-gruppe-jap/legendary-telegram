@@ -24,8 +24,8 @@ header {
 }
 
 .logo img {
-  width: 195px;
-  height: 60px;
+  width: 250px;
+  height: 100px;
   padding-left: 2.5rem;
   object-fit: unset;
 }
@@ -290,4 +290,20 @@ p {
   font-size: 20px;
   font-weight: 400;
   font-style: normal;
+}
+
+.menu i {
+  color: white;
+  font-size: 1.8rem;
+  margin: 8px;
+}
+
+.menu i:hover {
+  color: #2e54c6;
+  scale: 1.2;
+  cursor: pointer;
+}
+
+.logo a img:hover {
+  scale: 1.2;
 }
