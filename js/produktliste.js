@@ -23,8 +23,6 @@ function showProducts(event) {
         if (event) {
           if (event.target.value == "discount") {
             return product.discountPercentage;
-          } else if (event.target.value == "soldout") {
-            return product.stock <= 0;
           } else if (event.target.value == "discountNotSoldOut") {
             return product.discountPercentage && product.stock > 0;
           } else {
