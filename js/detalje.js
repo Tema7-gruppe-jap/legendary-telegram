@@ -14,7 +14,7 @@ fetch(`https://dummyjson.com/products/${productId}`)
   .then((data) => showProduct(data));
 
 function showProduct(data) {
-  productContainer.innerHTML = ` <img class="${data.stock === 0 && "udsolgt_f"} marginleft produktfoto" src="${data.images[1]}" alt="">
+  productContainer.innerHTML = ` <img class="${data.stock === 0 && "udsolgt_f"} marginleft produktfoto" src="${data.images[0]}" alt="">
 
             <div>
 <h1 class="titledetalje">${data.title}</h1>

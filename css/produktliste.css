@@ -68,7 +68,7 @@ main {
 
 .card {
   display: grid;
-  grid-template-rows: subgrid;
+  /* grid-template-rows: subgrid; */
   grid-row: span 5;
   border: 2px;
   border-style: solid;
@@ -99,8 +99,8 @@ main {
   border-color: #2e54c6;
   background-color: white;
   font-size: 1.5rem;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 0px;
   z-index: 1;
 }
 
@@ -141,7 +141,7 @@ footer {
 }
 
 #selectElement {
-  margin: 25px;
+  margin-block: 25px;
   padding-inline: 10px;
   width: 525px;
   height: 50px;
@@ -159,20 +159,8 @@ footer {
   text-align: left;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-left: 20px;
-  padding-top: 80px;
-  padding-bottom: 20px;
-}
-
-.menu i {
-  color: white;
-  font-size: 1.8rem;
-  margin: 8px;
-}
-
-.menu i:hover {
-  color: #2e54c6;
-  scale: 1.2;
-  cursor: pointer;
+  padding-top: 30px;
+  padding-bottom: 0px;
 }
 
 /* select {

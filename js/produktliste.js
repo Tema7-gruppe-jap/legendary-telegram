@@ -34,10 +34,10 @@ function showProducts(event) {
           return true;
         }
       })
-      .map(
-        (product) =>
-          ` <div class="card ${product.stock === 0 && "udsolgt_f"}">
-                <img src="${product.images[1]}" alt="">
+      .map((product) => {
+        console.log("product", product);
+        return ` <div class="card ${product.stock === 0 && "udsolgt_f"}">
+                <img src="${product.images[0]}" alt="">
                 <h3>${product.title}</h3>
                 <h4>${product.category}|${product.brand}</h4>
                 <p>${product.price},-</p>
@@ -53,8 +53,8 @@ function showProducts(event) {
                 <div class="udsolgt ${product.stock === 0 && "udsolgt_fr"}">
                     <p>Udsolgt</p>
                 </div>
-            </div>`
-      )
+            </div>`;
+      })
       .join("");
 
     console.log(markup);
