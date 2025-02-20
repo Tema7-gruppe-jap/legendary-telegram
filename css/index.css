@@ -20,32 +20,30 @@ img {
   text-align: center;
 }
 
-@media (max-width: 800px) {
-  .greyarea p {
-    padding: 50px;
-    padding-top: 50px;
-  }
-  .category_list_container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin-top: 3rem;
-    margin-bottom: 6rem;
-    width: 95%;
-  }
-
-  .hero h2 {
-    font-weight: 600;
-    font-size: 25px;
-    margin-top: 5rem;
-    text-align: center;
-  }
-  .h1index {
-    font-size: 35px;
-  }
+.greyarea p {
+  padding: 50px;
+  padding-top: 50px;
+}
+.category_list_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  width: 95%;
 }
 
-@media (min-width: 1200px) {
+.hero h2 {
+  font-weight: 600;
+  font-size: 25px;
+  margin-top: 5rem;
+  text-align: center;
+}
+.h1index {
+  font-size: 35px;
+}
+
+@media (min-width: 800px) {
   .kundeservice {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -73,7 +71,7 @@ img {
   }
 }
 
-@media (min-width: 800px) and (max-width: 1200px) {
+/* @media (min-width: 800px) and (max-width: 1200px) {
   .category_list_container {
     display: grid;
     grid-template-columns: 1fr;
@@ -87,7 +85,7 @@ img {
     padding: 100px;
     padding-top: 100px;
   }
-}
+} */
 
 .greyarea {
   background-color: lightgray;
