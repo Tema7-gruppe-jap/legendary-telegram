@@ -40,6 +40,8 @@ function showProduct(data) {
             <div class="flex kurv">
                 <h3>Pris før udsalg</h3>
                  <p class="bold"> <b>${data.price},- </b></p>
+                 <h3>Pris efter udsalg</h3>
+                 <p class="bold"> <b> ${(Math.ceil((data.price - data.price * (data.discountPercentage / 100)) * 100) / 100).toFixed(0)},- </b></p>
         
 
                 <div>
