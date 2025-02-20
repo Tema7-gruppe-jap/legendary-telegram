@@ -118,6 +118,31 @@ p {
   cursor: pointer;
 }
 
+.btn-cancel {
+  background-color: white;
+  padding: 5px;
+  width: 50%;
+  height: 100%;
+  font-family: "Space Grotesk", serif;
+  font-size: 30px;
+  margin-top: 2rem;
+  border: 5px solid rgb(252, 113, 113);
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.btn-cancel:hover {
+  background-color: rgb(252, 113, 113);
+  color: white;
+  cursor: pointer;
+}
+
+.btn-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
 /*************** Menu *************/
 
 .logo img {

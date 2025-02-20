@@ -96,7 +96,7 @@ img {
 }
 
 .yellowline {
-  border-top: 7px solid yellow;
+  border-top: 7px solid rgb(248, 248, 57);
   margin-inline: 3rem;
   margin-top: 3rem;
 }
